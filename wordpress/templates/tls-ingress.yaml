@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{.Values.ingressname.domain}}
+spec:
+  tls:
+  - secretName: ingress-tls-secret  
+  backend:
+    serviceName: task-lb  
+    servicePort: 80

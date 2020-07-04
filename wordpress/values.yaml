@@ -1,0 +1,34 @@
+#Secret-variable 
+secret:
+  value: lksjdfLKAJ43 
+
+#Domain ingress
+ingressname:
+  domain: tls-ingress
+
+#Service
+service:
+  name: mysql-lb
+
+# MySQL image
+mysqlimage:
+  name: mysql
+  tag: 5.7 
+
+#statefulset
+statefulset:
+  name: wordpress-task
+
+# WordPress version and tag
+wpimage:
+  name: wordpress
+  tag: 4.8-apache
+
+# Deployment
+dpname:
+  name: wordpress-task
+
+#nodeportservice
+servicenodeport:
+  name: task-lb     
+
